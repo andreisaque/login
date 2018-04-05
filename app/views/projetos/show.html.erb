@@ -1,0 +1,92 @@
+<p id="notice"><%= notice %></p>
+
+<style>
+
+table, td, th {    
+
+    border: 1px solid #ddd;
+
+    text-align: left;
+
+}
+
+
+
+table {
+
+    border-collapse: collapse;
+
+    width: 100%;
+
+}
+
+
+
+th, td {
+
+    padding: 15px;
+
+}
+
+
+
+th {
+
+    background-color: #4CAF50;
+
+    color: white;
+
+}
+
+
+
+</style>
+
+
+
+
+
+<table>
+
+    <tr>
+
+      <th>Nome</th>
+
+      <th>Matricula</th>
+
+      <th>Endereco</th>
+
+      <th>Telefone</th>
+
+     
+
+    </tr>
+
+ 
+
+
+
+      <tr>
+
+        <td><%= @projeto.nome %></td>
+
+        <td> <%= @projeto.matricula %></td>
+
+        <td> <%= @projeto.endereco %></td>
+
+        <td> <%= @projeto.telefone %></td>
+
+      </tr>
+
+</table>
+
+
+
+
+
+<br><br>
+
+<h2><%= link_to 'Editar', edit_projeto_path(@projeto) %> |
+
+<%= link_to 'Voltar', projetos_path %></h2>
+
